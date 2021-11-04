@@ -1,0 +1,65 @@
+body {
+  background-image: url("../components/svg/background.jpg");
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+
+.flex-item {
+  width: 10%;
+}
+
+.box-card {
+  width: 100%;
+  height: 75%;
+  border: 1px solid black;
+  background-image: linear-gradient(to right bottom, #7cacf4, #5e94f2, #447bee, #3460e7, #3342dc);
+  border-radius: 15px;
+  box-shadow: 2px 2px 8px 3px #888888;
+  text-align: center;
+  position: relative;
+}
+
+
+.box-title {
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  font-size: 2vw;
+  width: 100%;
+  height: 15%;
+}
+
+embed {
+  width: 70%;
+  padding: 10px;
+}
+
+
+@media only screen
+and (min-device-width: 300px)
+and (max-device-width: 375px)
+and (orientation: portrait) {
+  .flex-item {
+    width: 40%;
+  }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait) {
+  .flex-item {
+    width: 20%;
+  }
+}
+
+
+
+
